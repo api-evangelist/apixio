@@ -1,0 +1,290 @@
+generated: '2026-09-25'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 23
+  own: 6
+  other_domain: 16
+  platform: 1
+  roles:
+  - api
+  - data
+  - docs
+  - marketing
+  - other
+  - partner
+  - portal
+  - sandbox
+  - source
+  - status
+  - website
+hosts:
+- host: api.apixio.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: apixio.com
+  role: api
+  relation: other-domain
+- host: api.datavant.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: datavant.com
+  role: api
+  relation: own
+- host: api.relayto.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: relayto.com
+  role: api
+  relation: other-domain
+- host: apis.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - well-known
+  types: []
+  serves: []
+  status: 200
+  registrable_domain: relayto.com
+  role: api
+  relation: other-domain
+- host: apixio.relayto.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Documentation
+  serves:
+  - docs
+  - cdn
+  vendor: cloudfront
+  registrable_domain: relayto.com
+  role: docs
+  relation: other-domain
+- host: data.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  types: []
+  serves: []
+  status: 200
+  registrable_domain: relayto.com
+  role: data
+  relation: other-domain
+- host: datahub.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  types: []
+  serves: []
+  status: 200
+  registrable_domain: relayto.com
+  role: data
+  relation: other-domain
+- host: datavant.com
+  found_by:
+  - pointer
+  - probed
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: datavant.com
+  role: website
+  relation: own
+- host: dev.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - docs-index
+  types: []
+  serves:
+  - docs
+  status: 200
+  registrable_domain: relayto.com
+  role: other
+  relation: other-domain
+- host: developer.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - docs-index
+  - well-known
+  types: []
+  serves:
+  - docs
+  status: 200
+  registrable_domain: relayto.com
+  role: portal
+  relation: other-domain
+- host: developers.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - docs-index
+  types: []
+  serves:
+  - docs
+  status: 200
+  registrable_domain: relayto.com
+  role: portal
+  relation: other-domain
+- host: docs.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - docs-index
+  types: []
+  serves:
+  - docs
+  status: 200
+  registrable_domain: relayto.com
+  role: docs
+  relation: other-domain
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: open-data.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  types: []
+  serves: []
+  status: 200
+  registrable_domain: relayto.com
+  role: data
+  relation: other-domain
+- host: opendata.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  types: []
+  serves: []
+  status: 200
+  registrable_domain: relayto.com
+  role: data
+  relation: other-domain
+- host: partner.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  types: []
+  serves: []
+  status: 200
+  registrable_domain: relayto.com
+  role: partner
+  relation: other-domain
+- host: partners.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  types: []
+  serves: []
+  status: 200
+  registrable_domain: relayto.com
+  role: partner
+  relation: other-domain
+- host: portal.datavant.com
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: datavant.com
+  role: other
+  relation: own
+- host: review.apixio.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - APIReference
+  - GettingStarted
+  serves:
+  - docs
+  registrable_domain: apixio.com
+  role: docs
+  relation: other-domain
+- host: sandbox.relayto.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  types: []
+  serves: []
+  status: 200
+  registrable_domain: relayto.com
+  role: sandbox
+  relation: other-domain
+- host: status.datavant.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: datavant.com
+  role: status
+  relation: own
+- host: trust.datavant.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: datavant.com
+  role: other
+  relation: own
+- host: www.datavant.com
+  found_by:
+  - pointer
+  types:
+  - PrivacyPolicy
+  - Newsroom
+  - Blog
+  serves: []
+  registrable_domain: datavant.com
+  role: marketing
+  relation: own

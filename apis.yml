@@ -1,23 +1,84 @@
 aid: apixio
+
 name: Apixio
-description: 'Apixio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.datavant.com/opengraph.png
+
+description: Apixio provides AI-powered healthcare data solutions, improving operations, payments, and clinical outcomes for health plans and
+  providers. The company, now part of Datavant, offers a Connected Care Platform that leverages actionable AI technology and flexible services
+  to enable accurate payments, high‑quality patient care, and value‑based reimbursement models.
+
 url: https://raw.githubusercontent.com/api-evangelist/apixio/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: SecurityTxt
+  url: well-known/apixio-status-security.txt
+- type: WellKnown
+  url: well-known/apixio-well-known.yml
+- type: Hosts
+  url: hosts/apixio-hosts.yml
+- type: Vendors
+  url: vendors/apixio-vendors.yml
+- type: StatusPage
+  url: https://status.datavant.com/
+- type: PrivacyPolicy
+  url: https://www.datavant.com/privacy-policy
+- type: Newsroom
+  url: https://www.datavant.com/about/newsroom
+- type: Blog
+  url: https://www.datavant.com/blog
+- type: GitHubOrganization
+  url: https://github.com/datavant
+- type: DomainSecurity
+  url: security/apixio-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://datavant.com/
+- type: Documentation
+  url: https://apixio.relayto.com
+- type: APIReference
+  url: https://review.apixio.com
+- type: GettingStarted
+  url: https://review.apixio.com/login
+
+apis:
+- name: Apixio API
+  description: API reference for Apixio, part of Datavant.
+  humanURL: https://review.apixio.com
+  aid: apixio:apixio-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Review site renders via JavaScript and provides no machine‑readable OpenAPI spec.
+  evidence:
+  - url: https://review.apixio.com
+    status: 200
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
